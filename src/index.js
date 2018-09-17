@@ -1,3 +1,6 @@
-import { obj, str, helloWorld } from './example';
+import { confirmVerification, sendVerification } from './verification';
 
-export { obj, helloWorld };
+export default {
+    sendVerification,
+    confirmVerification,
+};

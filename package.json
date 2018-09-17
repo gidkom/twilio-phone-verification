@@ -1,7 +1,7 @@
 {
-  "name": "node-es6-boilerplate",
+  "name": "twilio-phone-verification",
   "version": "0.0.1",
-  "description": "Boilerplate for Node.js projects with lint, transpile and test configurations",
+  "description": "twilio phone verification",
   "main": "./build/index.js",
   "scripts": {
     "babel-node": "babel-node --",
@@ -11,24 +11,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aharshac/node-es6-boilerplate.git"
+    "url": "git+https://github.com/gidkom/twilio-phone-verification.git"
   },
   "keywords": [
     "nodejs",
-    "boilerplate",
-    "es6",
-    "es2015",
-    "babel",
-    "mocha",
-    "lint"
+    "twilio",
+    "phone",
+    "verification"
   ],
-  "author": "Harsha Alva",
+  "author": "Gideon Kombian",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aharshac/node-es6-boilerplate/issues"
+    "url": "https://github.com/gidkom/twilio-phone-verification/issues"
   },
-  "homepage": "https://github.com/aharshac/node-es6-boilerplate#readme",
+  "homepage": "https://github.com/gidkom/twilio-phone-verification#readme",
   "dependencies": {
+    "axios": "^0.18.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",

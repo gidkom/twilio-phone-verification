@@ -1,7 +1,5 @@
 node_modules
-example/assets
+example
 lib/
-dist/
-build/
 commands.txt
 npm-debug.log
