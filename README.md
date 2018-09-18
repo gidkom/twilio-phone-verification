@@ -16,7 +16,8 @@ OR
 ## Usage
 
 ```   
-import { Verification } from  'twilio-phone-verification';  
+import { Verification } from  'twilio-phone-verification';
+  
 let verify = new Verification(process.env.API_KEY);
 
 // send verification code
