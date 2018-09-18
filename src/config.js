@@ -1,6 +1,6 @@
-import { sendVerification, confirmVerification } from './verification';
-
 export default {
-    sendVerification,
-    confirmVerification,
-};
+    verifyUrl: 'https://api.authy.com/protected/json/phones/verification/start',
+
+    confirmUrl: 'https://api.authy.com/protected/json/phones/verification/check',
+
+}

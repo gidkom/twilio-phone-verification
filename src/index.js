@@ -1,6 +1,5 @@
-import { confirmVerification, sendVerification } from './verification';
+import Verification from './verification';
 
 export default {
-    sendVerification,
-    confirmVerification,
+    Verification
 };

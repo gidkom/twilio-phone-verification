@@ -1,0 +1,1 @@
+'use strict';Object.defineProperty(exports,'__esModule',{value:!0});var _verification=require('./verification'),_verification2=_interopRequireDefault(_verification);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}exports.default={Verification:_verification2.default},module.exports=exports.default;

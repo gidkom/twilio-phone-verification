@@ -1,0 +1,1 @@
+'use strict';Object.defineProperty(exports,'__esModule',{value:!0}),exports.default={verifyUrl:'https://api.authy.com/protected/json/phones/verification/start',confirmUrl:'https://api.authy.com/protected/json/phones/verification/check'},module.exports=exports.default;

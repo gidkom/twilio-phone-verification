@@ -1,11 +1,16 @@
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
-exports.helloWorld = exports.obj = undefined;
 
-var _example = require('./example');
+var _verification = require('./verification');
 
-exports.obj = _example.obj;
-exports.helloWorld = _example.helloWorld;
+var _verification2 = _interopRequireDefault(_verification);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = {
+    Verification: _verification2.default
+};
+module.exports = exports.default;

@@ -1,41 +1,33 @@
-# Node ES6 Boilerplate
+# Twilio Phone Verification
 
-[![Collaborizm](https://img.shields.io/badge/Collaborizm-Join%20now-blue.svg)](https://www.collaborizm.com/) [![Build Status](https://travis-ci.org/aharshac/node-es6-boilerplate.svg?branch=master)](https://travis-ci.org/aharshac/node-es6-boilerplate)   
-
-Boilerplate for Node.js projects with lint, transpile and test configurations.
+A NodeJS library to verify phone numbers using twilio's verification API
 
 &nbsp;
 
 ## Installation
 
-1. Clone repo    
-`git clone https://github.com/aharshac/node-es6-boilerplate.git <dir_name>`    
+`yarn add twilio-phone-verification`
 
-2. Change directory    
-`cd <dir_name>`    
+OR
 
-3. Remove git folder    
-*nix: `rm -rf ./.git`    
-win: `RD /S /Q .git`    
+`npm install --save twilio-phone-verification`    
 
-4. Edit **package.json**    
-Change `name, version, description, repository, author, bugs, homepage`    
 
-5. Install packages    
-`npm install`    
+## Usage
 
-6. Update packages    
-`npm update`    
+```   
+import { Verification } from  'twilio-phone-verification';  
+let verify = new Verification(process.env.API_KEY);
 
-&nbsp;
+// send verification code
+verify.sendVerification('024xxxxxxx', '233', 4)
+.then(res => console.log(res))
+.catch(err => console.log(err))
 
-## Scripts
 
-1. `build`    
-Transpile ES6 to **build** directory.    
+// confirm verification code
+verify.checkVerification('3432','024xxxxxxx', '233')
+.then(res => console.log(res))
+.catch(err => console.log(err))
 
-2. `dist`    
-Transpile and minify ES6 to **dist** directory.    
-
-3. `test`    
-Run tests in `test` firectory.    
+```
