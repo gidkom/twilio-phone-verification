@@ -17,17 +17,18 @@ OR
 
 ```   
 import { Verification } from  'twilio-phone-verification';
-  
+
 let verify = new Verification(process.env.API_KEY);
 
 // send verification code
-verify.sendVerification('024xxxxxxx', '233', 4)
+verify.sendVerification(phoneNumber, countryCode, codeLength)
 .then(res => console.log(res))
 .catch(err => console.log(err))
 
 
 // confirm verification code
-verify.checkVerification('3432','024xxxxxxx', '233')
+
+verify.checkVerification(code, phoneNumber, countryCode)
 .then(res => console.log(res))
 .catch(err => console.log(err))
 
