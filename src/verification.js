@@ -8,6 +8,13 @@ class Verification {
         this.apiKey = apiKey;
     }
 
+    /**
+     * send verification code
+     * @param {string|number} phoneNumber - phone number to verify
+     * @param {number} countryCode - country code
+     * @param {number} codeLength - length of code
+     * @return {Promise}
+     */
     async sendVerification(phoneNumber, countryCode, codeLength = 4) {
         let response;
         try {
@@ -26,7 +33,13 @@ class Verification {
 
         return response;
     }
-
+    /**
+     * check verification code
+     * @param {number} code - code sent
+     * @param {string|number} phoneNumber - phone number to verify
+     * @param {number} countryCode - country code
+     * @return {Promise}
+     */
     async checkVerification(code, phoneNumber, countryCode, ) {
         let response;
         try {
