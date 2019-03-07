@@ -40,7 +40,7 @@ class Verification {
      * @param {number} countryCode - country code
      * @return {Promise}
      */
-    async checkVerification(code, phoneNumber, countryCode, ) {
+    async checkVerification(code, phoneNumber, countryCode) {
         let response;
         try {
             response = await axios.get(confirmUrl, {
