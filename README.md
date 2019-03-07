@@ -18,7 +18,7 @@ OR
 ```   
 import { Verification } from  'twilio-phone-verification';
 
-let verify = new Verification(process.env.API_KEY);
+const verify = new Verification(process.env.API_KEY);
 
 // send verification code
 verify.sendVerification(phoneNumber, countryCode, codeLength)
