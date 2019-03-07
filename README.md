@@ -1,6 +1,8 @@
-# Twilio Phone Verification
+# Twilio Phone Verification  
+[![Build Status](https://travis-ci.org/gidkom/twilio-phone-verification.svg?branch=master)](https://travis-ci.org/gidkom/twilio-phone-verification)  
 
 A NodeJS library to verify phone numbers using twilio's verification API
+
 
 &nbsp;
 
