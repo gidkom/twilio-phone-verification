@@ -1,6 +1,6 @@
 {
   "name": "twilio-phone-verification",
-  "version": "1.0.1",
+  "version": "1.0.11",
   "description": "twilio phone verification",
   "main": "./dist/index.js",
   "scripts": {
