@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/gidkom/twilio-phone-verification#readme",
   "dependencies": {
-    "axios": "^0.21.1"
+    "axios": "^1.6.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
